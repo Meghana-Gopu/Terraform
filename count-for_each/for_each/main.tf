@@ -12,7 +12,7 @@ variable "instance_type" {
 
 variable "env" {
     description = "environment name"
-    default = ["dev","prod"]
+    default = ["dev","dev","prod"]
     type = list(string)
 }
 
