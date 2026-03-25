@@ -1,4 +1,3 @@
-
 variable "ami_id" {
     description = "passing values to ami_id"
     default = ""

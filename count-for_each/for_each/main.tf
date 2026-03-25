@@ -12,7 +12,7 @@ variable "instance_type" {
 
 variable "env" {
     description = "environment name"
-    default = ["dev","prod"]
+    default = ["dev","test","prod"]
     type = list(string)
 }
 
@@ -21,7 +21,7 @@ resource "aws_instance" "name" {
     instance_type = var.instance_type
     for_each = toset(var.env)  #here toset is used to convert list to set bacause for_each only accepts map and set not list
     tags = {
-      name = each.key # here we are creating 3 instances with different names
+      name = each.key   # here we are creating 3 instances with different names
     }
     }
   

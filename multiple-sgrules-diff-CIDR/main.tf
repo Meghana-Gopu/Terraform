@@ -19,8 +19,8 @@ variable "allowed_ports" {
   
 # }
   
-resource "aws_security_group" "devops-project-veera" {
-  name        = "devops-project-veera-nit"
+resource "aws_security_group" "devops-project-maggie" {
+  name        = "devops-project-maggie"
   description = "Allow TLS inbound traffic"
 
   
@@ -45,6 +45,6 @@ resource "aws_security_group" "devops-project-veera" {
   }
 
   tags = {
-    Name = "devops-project-veera-nit"
+    Name = "devops-project-maggie"
   }
 }
